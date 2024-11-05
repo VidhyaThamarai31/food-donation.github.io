@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,700;0,800;1,400;1,600&display=swap');
+
+/* Add background image with gradient overlay */
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/index.jpeg'); /* Use a real image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Move content up */
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Logo styling and animation */
+.logo {
+    font-size: 45px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    animation: fadeIn 1s ease-in-out;
+    margin-bottom: 20px;
+    margin-top: 30px; /* Adjust margin to move content up */
+}
+
+.logo b {
+    color: lightcoral;
+}
+
+/* Text for login as */
+.para {
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin-bottom: 50px; /* Add more space to keep buttons below the text */
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Styling for buttons */
+a {
+    display: inline-block;
+    font-size: 22px;
+    background: rgb(237, 130, 146); /* Slightly transparent to not completely block background */
+    padding: 12px 35px;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 10px auto;
+    color: #fff;
+    letter-spacing: 2px;
+    transition: 0.3s ease;
+    border-radius: 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Hover effect for buttons */
+a:hover {
+    letter-spacing: 4px;
+    background: lightpink;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+/* Container for the buttons */
+.log {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Spacing between buttons */
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .logo {
+        font-size: 30px;
+        padding: 50px 50px 20px 50px;
+    }
+    .para {
+        font-size: 20px;
+    }
+    a {
+        font-size: 18px;
+    }
+}
+</style>
+<body>
+    <p class="logo"> Welcome to Food <b>Donate</b></p>
+    <p class="para"> Login as</p>
+    <div class="log">
+        <a href="signup.php">User</a>
+        <a href="admin/signup.php">Admin</a>
+        <a href="delivery/deliverysignup.php" id="delivery"> <i class="fa fa-moped"></i> Delivery</a>
+    </div>
+
+</body>
+</html>
